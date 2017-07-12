@@ -16,6 +16,7 @@
 		E31A13CC1F16447200435B99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E31A13CB1F16447200435B99 /* GoogleService-Info.plist */; };
 		E31A13CE1F164DBA00435B99 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */; };
 		E31A13D01F164F8F00435B99 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13CF1F164F8F00435B99 /* PictureViewController.swift */; };
+		E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13D11F1663E900435B99 /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E31A13CB1F16447200435B99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		E31A13CF1F164F8F00435B99 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		E31A13D11F1663E900435B99 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E31A13B91F1642D200435B99 /* AppDelegate.swift */,
 				E31A13BB1F1642D200435B99 /* ViewController.swift */,
 				E31A13BD1F1642D200435B99 /* Main.storyboard */,
+				E31A13D11F1663E900435B99 /* SelectUserViewController.swift */,
 				E31A13CF1F164F8F00435B99 /* PictureViewController.swift */,
 				E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */,
 				E31A13C01F1642D200435B99 /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 			files = (
 				E31A13BC1F1642D200435B99 /* ViewController.swift in Sources */,
 				E31A13D01F164F8F00435B99 /* PictureViewController.swift in Sources */,
+				E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */,
 				E31A13BA1F1642D200435B99 /* AppDelegate.swift in Sources */,
 				E31A13CE1F164DBA00435B99 /* SnapsViewController.swift in Sources */,
 			);

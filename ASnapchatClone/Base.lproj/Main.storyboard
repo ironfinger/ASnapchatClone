@@ -134,8 +134,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="726-gJ-lYb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="726-gJ-lYb">
                                 <rect key="frame" x="67" y="84" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.58437904792746109" green="0.58437904792746109" blue="0.58437904792746109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="SNa-5o-VDK"/>
                                     <constraint firstAttribute="width" constant="240" id="SXK-Vl-v46"/>
@@ -182,11 +183,45 @@
                         <outlet property="descriptionTextField" destination="FGi-cL-InP" id="Wbz-4C-rH8"/>
                         <outlet property="imageView" destination="726-gJ-lYb" id="pBE-r5-gNB"/>
                         <outlet property="nextBtn" destination="7Jo-zv-IXs" id="QPK-AL-VC5"/>
+                        <segue destination="WdO-l6-ArT" kind="show" identifier="selectUserSegue" id="J87-gI-luU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIm-5I-yH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1485.5999999999999" y="160.56971514242881"/>
+        </scene>
+        <!--Select User View Controller-->
+        <scene sceneID="D13-Fk-vXl">
+            <objects>
+                <viewController id="WdO-l6-ArT" customClass="SelectUserViewController" customModule="ASnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJD-Oe-y1X"/>
+                        <viewControllerLayoutGuide type="bottom" id="HRa-38-sIW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ejs-Cx-dVa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-az-AVq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jDy-az-AVq" firstAttribute="leading" secondItem="ejs-Cx-dVa" secondAttribute="leading" id="Ay6-fQ-4pv"/>
+                            <constraint firstItem="jDy-az-AVq" firstAttribute="top" secondItem="kJD-Oe-y1X" secondAttribute="bottom" id="EnH-3h-LH1"/>
+                            <constraint firstItem="HRa-38-sIW" firstAttribute="top" secondItem="jDy-az-AVq" secondAttribute="bottom" id="Rt4-sS-Yfu"/>
+                            <constraint firstAttribute="trailing" secondItem="jDy-az-AVq" secondAttribute="trailing" id="l0k-LI-DCI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="jDy-az-AVq" id="cJt-S0-OIU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvd-Ks-BYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2166" y="161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MD7-2u-Kj3">
