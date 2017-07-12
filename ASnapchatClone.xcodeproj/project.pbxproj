@@ -17,6 +17,7 @@
 		E31A13CE1F164DBA00435B99 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */; };
 		E31A13D01F164F8F00435B99 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13CF1F164F8F00435B99 /* PictureViewController.swift */; };
 		E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13D11F1663E900435B99 /* SelectUserViewController.swift */; };
+		E31A13D61F166F6600435B99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13D51F166F6600435B99 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		E31A13CF1F164F8F00435B99 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		E31A13D11F1663E900435B99 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		E31A13D51F166F6600435B99 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */,
 				E31A13C01F1642D200435B99 /* Assets.xcassets */,
 				E31A13C21F1642D200435B99 /* LaunchScreen.storyboard */,
+				E31A13D51F166F6600435B99 /* User.swift */,
 				E31A13CB1F16447200435B99 /* GoogleService-Info.plist */,
 				E31A13C51F1642D200435B99 /* Info.plist */,
 			);
@@ -225,6 +228,7 @@
 			files = (
 				E31A13BC1F1642D200435B99 /* ViewController.swift in Sources */,
 				E31A13D01F164F8F00435B99 /* PictureViewController.swift in Sources */,
+				E31A13D61F166F6600435B99 /* User.swift in Sources */,
 				E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */,
 				E31A13BA1F1642D200435B99 /* AppDelegate.swift in Sources */,
 				E31A13CE1F164DBA00435B99 /* SnapsViewController.swift in Sources */,
