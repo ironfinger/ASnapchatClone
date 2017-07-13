@@ -19,6 +19,7 @@
 		E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13D11F1663E900435B99 /* SelectUserViewController.swift */; };
 		E31A13D61F166F6600435B99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A13D51F166F6600435B99 /* User.swift */; };
 		E375D40C1F17C3EC00D76FDC /* snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375D40B1F17C3EC00D76FDC /* snap.swift */; };
+		E375D40E1F17CDA400D76FDC /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E375D40D1F17CDA400D76FDC /* ViewSnapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E31A13D11F1663E900435B99 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		E31A13D51F166F6600435B99 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E375D40B1F17C3EC00D76FDC /* snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snap.swift; sourceTree = "<group>"; };
+		E375D40D1F17CDA400D76FDC /* ViewSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				E31A13B91F1642D200435B99 /* AppDelegate.swift */,
 				E31A13BB1F1642D200435B99 /* ViewController.swift */,
 				E31A13BD1F1642D200435B99 /* Main.storyboard */,
+				E375D40D1F17CDA400D76FDC /* ViewSnapViewController.swift */,
 				E31A13D11F1663E900435B99 /* SelectUserViewController.swift */,
 				E31A13CF1F164F8F00435B99 /* PictureViewController.swift */,
 				E31A13CD1F164DBA00435B99 /* SnapsViewController.swift */,
@@ -232,6 +235,7 @@
 				E375D40C1F17C3EC00D76FDC /* snap.swift in Sources */,
 				E31A13BC1F1642D200435B99 /* ViewController.swift in Sources */,
 				E31A13D01F164F8F00435B99 /* PictureViewController.swift in Sources */,
+				E375D40E1F17CDA400D76FDC /* ViewSnapViewController.swift in Sources */,
 				E31A13D61F166F6600435B99 /* User.swift in Sources */,
 				E31A13D21F1663E900435B99 /* SelectUserViewController.swift in Sources */,
 				E31A13BA1F1642D200435B99 /* AppDelegate.swift in Sources */,
