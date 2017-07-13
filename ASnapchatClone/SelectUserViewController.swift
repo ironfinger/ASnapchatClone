@@ -16,6 +16,8 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
     
     var users:[User] = []
+    var imageURL = ""
+    var descrip = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +29,10 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
             print(snapshot)
             // Get user email:
             let user = User() // Creates a new user object.
-            let userID = Auth.auth().currentUser?.uid // Fetch the user ID.
             let value = snapshot.value as? NSDictionary // Lets the compiler know that the user values are a NSDictionary.
             let userEmail = value?["email"] as? String ?? "" // Pulls an email as a string.
             user.email = userEmail // Asigns the email pulled from the database to a new object.
-            user.uid = userID! // Asigns the userID to the new user object.
+            user.uid = snapshot.key // Asigns the userID to the new user object.
             print(" I think we have the user email: \(user.email)!")
             print("Hopefully we have the user uid: \(user.uid)!")
             self.users.append(user) // Assign the new user object to the users array.
@@ -48,5 +49,12 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
         let user = users[indexPath.row]
         cell.textLabel?.text = user.email
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        let currentUser:String = Auth.auth().currentUser!.email!
+        let snap = ["from":currentUser, "description":descrip, "imageURL":imageURL]
+        Database.database().reference().child("Users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
     }
 }

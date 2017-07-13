@@ -47,11 +47,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
                 print("We have an error: \(error)")
             }else{
                 print(metadata?.downloadURL()) // Provides a URL to the image uploaded.
-                self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
+                self.performSegue(withIdentifier: "selectUserSegue", sender: metadata?.downloadURL()!.absoluteString)
             }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! SelectUserViewController
+        nextVC.imageURL = sender as! String
+        nextVC.descrip = descriptionTextField.text!
     }
 }
