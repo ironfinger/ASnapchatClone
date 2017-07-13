@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 class SelectUserViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -22,14 +23,19 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        Database.database().reference().child("Users").observe(DataEventType.childAdded) { (snapshot) in
+        Database.database().reference().child("Users").observe(DataEventType.childAdded) { (snapshot) in // Creates a read reference in the database.
             print(snapshot)
             // Get user email:
-            let user = User()
-            let value = snapshot.value as? NSDictionary
-            let userEmail = value?["email"] as? String ?? ""
-            user.email = userEmail
+            let user = User() // Creates a new user object.
+            let userID = Auth.auth().currentUser?.uid // Fetch the user ID.
+            let value = snapshot.value as? NSDictionary // Lets the compiler know that the user values are a NSDictionary.
+            let userEmail = value?["email"] as? String ?? "" // Pulls an email as a string.
+            user.email = userEmail // Asigns the email pulled from the database to a new object.
+            user.uid = userID! // Asigns the userID to the new user object.
             print(" I think we have the user email: \(user.email)!")
+            print("Hopefully we have the user uid: \(user.uid)!")
+            self.users.append(user) // Assign the new user object to the users array.
+            self.tableView.reloadData() // Reload to table view.
         }
     }
     

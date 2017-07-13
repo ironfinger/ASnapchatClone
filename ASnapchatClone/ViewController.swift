@@ -26,11 +26,11 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in // This is an attempt at signing in.
             print("We tried to sign in.")
             if error != nil {
-                print("We have an error: \(error)")
+                print("We have an error: \(String(describing: error))")
                 Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in // This creates a user.
                     print("We tried to create a user!")
                     if error != nil {
-                        print("We have an error \(error)")
+                        print("We have an error \(String(describing: error))")
                     }else {
                         print("User has been created.")
                         let users = Database.database().reference().child("Users").child(user!.uid).child("email").setValue(user!.email!)
