@@ -26,7 +26,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
 
     @IBAction func cameraTapped(_ sender: Any) {
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion: nil)
     }
